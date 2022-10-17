@@ -9,7 +9,7 @@ const hre = require("hardhat");
 async function main() {
   
 
-  const contract = await hre.ethers.getContractFactory("Erc20infinite");
+  const contract = await hre.ethers.getContractFactory("Erc20Infinite");
   const contractInstance = await contract.deploy(100000);
 
   await contractInstance.deployed();

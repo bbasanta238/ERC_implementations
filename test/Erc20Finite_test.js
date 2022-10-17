@@ -4,7 +4,7 @@ const { ethers } = require("hardhat");
 describe("Erc20finte_test", () => {
 	beforeEach(async () => {
 		[add1, add2, add3] = await ethers.getSigners();
-		contract = await ethers.getContractFactory("Erc20finite");
+		contract = await ethers.getContractFactory("Erc20Finite");
 		deployedContract = await contract.deploy(100000);
 	});
 	it("should have mint token", async () => {

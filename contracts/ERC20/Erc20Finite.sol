@@ -3,7 +3,7 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
 
-contract Erc20finite is ERC20Capped {
+contract Erc20Finite is ERC20Capped {
     constructor(uint256 initialSuplly)
         ERC20("ERC20finite", "FTOK")
         ERC20Capped(300000 * (10**decimals()))
